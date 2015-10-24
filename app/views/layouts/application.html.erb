@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
+</head>
+<body>
+		<center>
+		<div class="top">
+			<div class="row bar">
+				<div class="col-md-2">
+					<%=link_to image_tag('projecticon.png'), projects_path%>
+					<h5><%=link_to 'Projects', projects_path%></h5>
+				</div>
+				<div class="col-md-2">
+					<%= link_to image_tag("experienceicon.png"), education_path %>
+					<h5><%=link_to 'Education', education_path%></h5>
+				</div>
+				<div class="col-md-4">
+					<%= link_to image_tag("logo2.png"), root_path %>
+				</div>
+				<div class="col-md-2">
+					<%= link_to image_tag("abouticon.png"), about_path %>
+					<h5><%=link_to 'About', about_path%></h5>
+				</div>
+				<div class="col-md-2">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="mailto:stephjanecz@gmail.com" target="_blank"><%=image_tag('mail.png')%></a>
+
+							<a href="https://www.linkedin.com/in/stephanieczajkowski" target="_blank"><%=image_tag('linkedin.png')%></a>
+								
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							
+							<a href="http://uxnfrecks.tumblr.com/" target="_blank"><%=image_tag('tumblr.png')%></a>
+						
+						
+							<a href="https://github.com/stephjane" target="_blank"><%=image_tag('github.png')%></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+		</center>
+
+		
+		
+
+		<center>
+			<div class="container">
+			<%= yield %>
+			</div>
+		</center>
+
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
