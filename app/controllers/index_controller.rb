@@ -11,6 +11,15 @@ class IndexController < ApplicationController
   def education
   end
 
-  def contact
+  def tapetrack
+  end
+
+  def cardfeed
+  end
+
+  def ihg
+  end
+
+  def moxie
   end
 end

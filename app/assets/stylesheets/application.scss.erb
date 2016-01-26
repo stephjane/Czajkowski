@@ -15,10 +15,29 @@
  */
  @import "bootstrap-sprockets";
 @import "bootstrap";
+/*dark blue #333366
+light blue #1DA2CF
+light grey #cccccc
+dark green #006633
+turquoise #74A588
+mint #C9FFC6
+cardfeed blue #0099FF
+ihg orange #ff9900
+moxie orange #ff9933
+aquatic red #E82C0C
+aquatic blue #00417B
+aquatic light blue #D3F8FF
+dark grey #666666*/
+/*.panel{
+	background-color: rgba(102,102,102,.5);
+}*/
+/*#accordion{
+	color: #1DA2CF;
+}*/
 
 .container {
-  background-color: #24464A;
-  
+  background-color: #D3F8FF;
+
   width: 100%;
   height: 100%;
   padding-left: 0px;
@@ -34,19 +53,37 @@
   height: auto;
   width: 100%;
   padding-bottom: 10px;
-  border-bottom: 2px solid #000000;
 }
-.bar{
-
-}
-
-.background {
+.home-row {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .resume-button {
   margin-top: 5px;
   text-align: center;
 }
-
+#name {
+  color: #00417B;
+  font-size: 80px;
+  letter-spacing: 3px;
+  font-family: verdana;
+}
+.uxdev {
+  color: #00417B;
+  font-size: 30px;
+  font-weight: bold;
+}
+.circleparagraph {
+  border: 2px solid #ff9933;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding: 5%;
+  text-align: center;
+}
+.no-margin {
+  margin: 0;
+}
 #name_logo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -63,14 +100,14 @@
   background-color: #FFFFFF;
   height: 100%;
   width: 100%;
-  border-top: 2px solid #000000;
-  padding-top: 15px;
 }
 
 #hero {
-  padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 2px solid #ff9933;
 }
+
+
 
 @media screen and (min-width: 900px) {
   .top{
@@ -80,9 +117,9 @@
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000000;
-
+    border-bottom: 2px solid #ff9933;
   }
+
   .bar{
     width:900px;
   }
@@ -92,21 +129,13 @@
     padding-right: 20px;
     padding-top: 20px;
   }
-
-  /*.background{
-    background: url(<%= asset_path "stardust.png"%>);
-    background-size:cover;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-  }*/
 }
+
 
 .title{
   color: #182259;
   font-size: 80px;
-  font-family: helvetica;
+  font-family: verdana;
 }
 .panel{
   background-color: transparent;
@@ -114,7 +143,26 @@
 .panel-heading{
   background-color: transparent;
 }
-
+.clickimagetext {
+  font-size: 14px;
+  font-style: italic;
+}
+.l-inline-block {
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
+.textdecoration {
+  text-decoration: underline;
+  text-decoration-weight: 10px;
+}
+.l-inline-block {
+  display: inline-block;
+}
+.clickable {
+  cursor: pointer;
+}
 .abouttext{
   color:white;
   text-align: center;
@@ -126,24 +174,23 @@
 }
 
 .web{
-	font-family: helvetica;
+	font-family: verdana;
 	color: #666666;
 }
 .ux{
-	font-family: helvetica;
+	font-family: verdana;
 	color: #666666;
 }
 p{
-	font-family: helvetica;
+	font-family: verdana;
 	font-size: 18px;
 	color: black;
   text-align: center;
 }
 .p2{
-  font-family: helvetica;
-  font-size: 17px;
-  color: white;
-  text-align: left;
+  font-family: verdana;
+  color: #00417B;
+  font-size: 16px;
 }
 li{
   text-align: left;
@@ -153,29 +200,6 @@ li{
 .center{
   text-align: center;
 }
-.navbar-inverse {
-  background-color: transparent;
-  border-color: transparent;
-}
-.navbar-inverse .navbar-text {
-  color: #080808;
-}
-.navbar-inverse .navbar-nav > li > a {
-  color: #666666;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #74A588;
-  background-color: transparent;
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #74A588;
-  background-color: #080808;
-}
-
-
 .panel{
 	width: 305px;
 	height: 249px;
@@ -218,7 +242,7 @@ li{
 }
 .btn-primary {
   color: white;
-  background-color: #cc9933;
+  background-color: #00417B;
   border-color: #74A588;
   border: 2px solid transparent;
   border-radius: 20px;
@@ -226,7 +250,7 @@ li{
 
 .btn-primary:hover {
   color: white;
-  background-color: #74A588;
+  background-color: #ff9933;
   border-color: transparent;
 }
 .btn-primary:focus,
@@ -344,16 +368,25 @@ li{
 	vertical-align: baseline
 }
 .modal-lg{
-	width: 1000px; 
+	width: 1000px;
 }
 .modal-sm{
   width: 900px;
 }
 .padding{
   padding-left: 20px;
-  padding-bottom:30px;
+  padding-bottom:20px;
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+.projectfilter {
+  font-weight: bold;
+  color: #00417B;
+  font-size: 24px;
+  margin-right: 20px;
+}
+.padding-top {
+  padding-top: 40px;
 }
 h4{
   font-family: arial;
@@ -383,27 +416,31 @@ li{
 .black{
   color: black;
 }
-.home-column{
-  padding-top: 100px;
-}
 .white{
   color: white;
 }
 
 a{
-  color:black;
+  color:#00417B;
 }
 a:visited{
   color:black;
 }
 a:hover{
   background-color: transparent;
-  color: #74A588;
+  color: #ff9933;
+}
+a:active{
+  color: #ff9933;
+  background-color: transparent;
 }
 .portdescription{
   padding-top: 20px;
   padding-left: 20px;
   text-align: center;
+}
+.portdescription:hover {
+  text-decoration: none;
 }
 .portdescription2{
   padding-top: 84px;
@@ -421,22 +458,3 @@ a:hover{
 .bgmoxorange{
   background-color:#666666;
 }
-
-
-
-/*dark blue #333366
-light blue #1DA2CF
-light grey #cccccc
-dark green #006633
-turquoise #74A588
-mint #C9FFC6
-cardfeed blue #0099FF
-ihg orange #ff9900
-moxie orange #ff9933
-dark grey #666666*/
-/*.panel{
-	background-color: rgba(102,102,102,.5);
-}*/
-/*#accordion{
-	color: #1DA2CF;
-}*/

@@ -13,5 +13,37 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  var uxTwo = $('#uxtwo');
+  var webdevTwo = $('#webdevtwo');
+  var all = $('#all');
+
+  function deactive() {
+    all.removeClass("textdecoration");
+    $('#webdev').removeClass("textdecoration");
+    $('#ux').removeClass("textdecoration");
+    uxTwo.addClass("hide");
+    webdevTwo.addClass("hide");
+  }
+
+  function flow(that) {
+    deactive()
+    $(that).addClass("textdecoration");
+    $('#' + $(that).attr("id") + 'two').removeClass("hide");
+  }
+
+  $('#ux, #webdev').click(function() {
+    flow(this);
+  });
+
+  all.click(function() {
+    deactive()
+    $(this).addClass("textdecoration");
+    uxTwo.removeClass("hide");
+    webdevTwo.removeClass("hide");
+  });
+});
+
+

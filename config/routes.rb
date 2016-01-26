@@ -7,6 +7,14 @@ Rails.application.routes.draw do
 
   get 'education'=> 'index#education'
 
+  get 'tapetrack'=> 'index#tapetrack'
+
+  get 'cardfeed'=> 'index#cardfeed'
+
+  get 'ihg'=> 'index#ihg'
+
+  get 'moxie'=> 'index#moxie'
+
   get 'contact'=> 'index#contact'
 
   resources :homes
