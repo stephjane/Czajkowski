@@ -27,6 +27,8 @@ moxie orange #ff9933
 aquatic red #E82C0C
 aquatic blue #00417B
 aquatic light blue #D3F8FF
+yellow #cc9933
+background grey #A4BFC4
 dark grey #666666*/
 /*.panel{
 	background-color: rgba(102,102,102,.5);
@@ -44,6 +46,9 @@ dark grey #666666*/
   padding-right: 0px;
   margin-right: 0px;
   margin-left: 0px;
+}
+.greybackground {
+  background: #A4BFC4;
 }
 
 .top {
@@ -97,17 +102,29 @@ dark grey #666666*/
 .name_panel{
   bottom: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: white;
   height: 100%;
   width: 100%;
+}
+.project_panel {
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #E82C0C;
 }
 
 #hero {
   padding-bottom: 10px;
-  border-bottom: 2px solid #ff9933;
+  border-bottom: 2px solid #E82C0C;
 }
-
-
+.roundcorners {
+  border-radius: 25px;
+}
+width-100 {
+  width: 100%;
+}
 
 @media screen and (min-width: 900px) {
   .top{
@@ -117,7 +134,7 @@ dark grey #666666*/
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ff9933;
+    border-bottom: 2px solid #E82C0C;
   }
 
   .bar{
@@ -250,17 +267,8 @@ li{
 
 .btn-primary:hover {
   color: white;
-  background-color: #ff9933;
+  background-color: #cc9933;
   border-color: transparent;
-}
-.btn-primary:focus,
-.btn-primary.focus {
-  color: white;
-  background-color: #74A588;
-  border-color: transparent;
-}
-.btn-primary:visited{
-  color:white;
 }
 .btn-cf {
   color: white;
@@ -419,7 +427,16 @@ li{
 .white{
   color: white;
 }
-
+.padding-bottom {
+  padding-bottom: 100px;
+}
+.padding-top {
+  padding-top: 50px;
+}
+.tapetrack {
+  width: 1000px;
+  padding-top: 30px;
+}
 a{
   color:#00417B;
 }
@@ -428,11 +445,7 @@ a:visited{
 }
 a:hover{
   background-color: transparent;
-  color: #ff9933;
-}
-a:active{
-  color: #ff9933;
-  background-color: transparent;
+  color: #cc9933;
 }
 .portdescription{
   padding-top: 20px;
