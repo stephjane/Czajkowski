@@ -9,46 +9,26 @@
 </head>
 <body>
 		<center>
-		<div class="top">
-			<div class="row bar">
-				<div class="col-md-2">
-					<%=link_to image_tag('projecticon2.png'), projects_path%>
-					<h5><%=link_to 'Projects', projects_path%></h5>
-				</div>
-				<div class="col-md-2">
-					<%= link_to image_tag("experienceicon2.png"), education_path %>
-					<h5><%=link_to 'Education', education_path%></h5>
-				</div>
-				<div class="col-md-4">
-					<%= link_to image_tag("logo2.png"), root_path %>
-				</div>
-				<div class="col-md-2">
-					<%= link_to image_tag("abouticon2.png"), about_path %>
-					<h5><%=link_to 'About', about_path%></h5>
-				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
-							<a href="mailto:stephjanecz@gmail.com" target="_blank"><%=image_tag('mail.png')%></a>
-
-							<a href="https://www.linkedin.com/in/stephanieczajkowski" target="_blank"><%=image_tag('linkedin.png')%></a>
-
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-
-							<a href="http://uxnfrecks.tumblr.com/" target="_blank"><%=image_tag('tumblr.png')%></a>
-
-
-							<a href="https://github.com/stephjane" target="_blank"><%=image_tag('github.png')%></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
+  		<div class="top">
+  			<div class="row bar">
+  				<div class="col-md-4">
+  					<%= button_to "Projects", projects_path, :class=> "navbutton", :method => :get%>
+  				</div>
+  				<div class="col-md-4">
+  					<%= button_to "Education", education_path, :class=> "navbutton", :method => :get%>
+  				</div>
+  				<div class="col-md-4">
+  					<%= button_to "About", about_path, :class=> "navbutton", :method => :get%>
+  				</div>
+        </div>
+        <!-- <div class="pull-right">
+          <a href="mailto:stephjanecz@gmail.com" target="_blank"><%=image_tag('mail.png')%></a>
+          <a href="https://www.linkedin.com/in/stephanieczajkowski" target="_blank"><%=image_tag('linkedin.png')%></a>
+          <a href="http://uxnfrecks.tumblr.com/" target="_blank"><%=image_tag('tumblr.png')%></a>
+          <a href="https://github.com/stephjane" target="_blank"><%=image_tag('github.png')%></a>
+        </div> -->
+  		</div>
+      <a href="/"><p id="name" class="margin-0 uppercase">stephanie czajkowski</p></a>
 		</center>
 
 

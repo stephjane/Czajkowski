@@ -13,12 +13,12 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 /*dark blue #333366
 light blue #1DA2CF
 light grey #cccccc
-dark green #006633
+dark green #14291E
 turquoise #74A588
 mint #C9FFC6
 cardfeed blue #0099FF
@@ -50,28 +50,50 @@ dark grey #666666*/
 .greybackground {
   background: #A4BFC4;
 }
-
+.pull-right {
+  text-align: right;
+}
 .top {
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #666666;
   height: auto;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 10px solid #025920;
 }
 .home-row {
   padding-left: 100px;
   padding-right: 100px;
+  }
+.navbutton {
+  height: 40px;
+  width: 80px;
+  background-color: rgba(211, 248, 255, .8);
+  border: none;
+  border-radius: 5px;
+  color: #00417B;
+  font-weight: bold;
 }
 .resume-button {
   margin-top: 5px;
   text-align: center;
 }
 #name {
-  color: #00417B;
-  font-size: 80px;
-  letter-spacing: 3px;
+  color: #025920;
+  font-size: 50px;
+  letter-spacing: 6px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-family: verdana;
+  /*background-color: #D3F8FF;*/
+  padding-top: 4px;
+}
+.margin-0 {
+  margin: 0px;
+  margin-top: -4px;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .uxdev {
   color: #00417B;
@@ -89,17 +111,7 @@ dark grey #666666*/
 .no-margin {
   margin: 0;
 }
-#name_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-.name_panel{
+.bottom_panel{
   bottom: 0;
   left: 0;
   background-color: white;
@@ -112,17 +124,17 @@ dark grey #666666*/
   background-color: white;
   height: 100%;
   width: 100%;
-  border-bottom: 2px solid #E82C0C;
 }
 
 #hero {
   padding-bottom: 10px;
-  border-bottom: 2px solid #E82C0C;
+  padding-top: 20px;
+  border-bottom: 4px solid #025920;
 }
 .roundcorners {
   border-radius: 25px;
 }
-width-100 {
+.width-100 {
   width: 100%;
 }
 
@@ -130,25 +142,17 @@ width-100 {
   .top{
     top:0;
     left: 0;
-    background-color: #FFFFFF;
+    background-color: white;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #E82C0C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #025920;
   }
 
   .bar{
     width:900px;
   }
-
-  .home-row{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
 }
-
-
 .title{
   color: #182259;
   font-size: 80px;
@@ -427,11 +431,11 @@ li{
 .white{
   color: white;
 }
-.padding-bottom {
-  padding-bottom: 100px;
+.margin-top {
+  margin-top: 60px;
 }
-.padding-top {
-  padding-top: 50px;
+.margin-bottom {
+  margin-bottom: 80px;
 }
 .tapetrack {
   width: 1000px;

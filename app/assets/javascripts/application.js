@@ -15,6 +15,22 @@
 //= require jquery_ujs
 //= require_tree .
 
+//NAVBAR
+$(document).ready(function(){
+  $(".navbutton").mouseenter(function() {
+    $(this).css("background-color", "#025920");
+    $(this).css("color", "white");
+    // $(this).css("border", "2px solid #E82C0C");
+  });
+  $(".navbutton").mouseout(function() {
+    $(this).css("background-color", "rgba(211, 248, 255, .8)");
+    $(this).css("color", "#00417B");
+    $(this).css("border", "none");
+  });
+});
+
+
+//PROJECTS
 $(document).ready(function() {
   var uxTwo = $('#uxtwo');
   var webdevTwo = $('#webdevtwo');
